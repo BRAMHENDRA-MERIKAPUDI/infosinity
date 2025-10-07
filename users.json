@@ -1,0 +1,5 @@
+{
+    "student1@example.com": {"password": "student123", "role": "student"},
+    "faculty1@example.com": {"password": "faculty123", "role": "faculty"},
+    "director1@example.com": {"password": "director123", "role": "director"}
+}

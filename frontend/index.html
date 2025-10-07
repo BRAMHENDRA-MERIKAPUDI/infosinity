@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoSNity Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="info">
+            <h1>InfoSNity</h1>
+            <p>Smart Information Sharing Software</p>
+        </div>
+
+        <div class="login-form">
+            <form action="/login" method="POST">
+                <h2>Sign In</h2>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                
+                <div class="role-selection">
+                    <label><input type="radio" name="role" value="student" checked> Student</label>
+                    <label><input type="radio" name="role" value="faculty"> Faculty</label>
+                    <label><input type="radio" name="role" value="director"> Director</label>
+                </div>
+
+                <label><input type="checkbox" name="remember"> Remember me</label>
+                <button type="submit">Sign In</button>
+                <p><a href="#">Forgot password?</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
